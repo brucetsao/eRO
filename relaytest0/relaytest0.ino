@@ -1,7 +1,7 @@
-#define relaypin1 32
-#define relaypin2 34
-#define relaypin3 36
-#define relaypin4 38
+#define relaypin1 8
+#define relaypin2 9
+#define relaypin3 10
+#define relaypin4 11
 
 void setup()
 {
@@ -19,11 +19,13 @@ digitalWrite(relaypin1,HIGH);
 digitalWrite(relaypin2,HIGH);
 digitalWrite(relaypin3,HIGH);
 digitalWrite(relaypin4,HIGH);
+Serial.println("all open");
  delay(2000);
 digitalWrite(relaypin1,LOW);
 digitalWrite(relaypin2,LOW);
 digitalWrite(relaypin3,LOW);
 digitalWrite(relaypin4,LOW);
- delay(2000);
+ Serial.println("all close");
+delay(2000);
 
 }
